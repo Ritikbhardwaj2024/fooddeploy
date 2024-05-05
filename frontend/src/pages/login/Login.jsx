@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `https://fooddeploy-nine.vercel.app//api/user/register`,
+        `https://fooddeploy-nine.vercel.app/api/user/register`,
         currentUser
       );
       const { user, token } = response.data;
